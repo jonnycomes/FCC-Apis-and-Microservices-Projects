@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>Timestamp Microservice</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+
+      <div class="container">
+        <h1>Timestamp Microservice</h1>
+        <div>
+          <p>
+            This site provides a timestamp API using the following endpoint: 
+          </p>
+          <code>GET https://savory-pyrite.glitch.me/api/timestamp/:date_string?</code>
+          <div id="user-stories">
+            <ul>
+              <li>For valid date strings, the api returns a json containing the corresponding unix and utc timestamps.</li>
+              <li>If the date string is empty, the api will return the timestamps for the current time.</li>
+              <li>For invalid date strings, the api returns the following json: <br> <code>{"unix": null, "utc" : "Invalid Date"}</code></li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>Example Usage</h2>
+        <p>
+          Click on the following examples to see the api in action:
+        </p>
+        <div id="examples">
+          <ul>
+            <li>
+              <a class="example" href="https://savory-pyrite.glitch.me/api/timestamp/2015-12-25" target="_blank">
+                <code>GET .../api/timestamp/2015-12-25</code>
+              </a>
+            </li>
+            <li>
+              <a class="example" href="https://savory-pyrite.glitch.me/api/timestamp/Jan 14 2014" target="_blank">
+                <code>GET .../api/timestamp/Jan 14 2014</code>
+              </a>
+            </li>
+            <li>
+              <a class="example" href="https://savory-pyrite.glitch.me/api/timestamp/1450137600" target="_blank">
+                <code>GET .../api/timestamp/1450137600</code>
+              </a>
+            </li>
+            <li>
+              <a class="example" href="https://savory-pyrite.glitch.me/api/timestamp/2007-06-09T17:46:21" target="_blank">
+                <code>GET .../api/timestamp/2007-06-09T17:46:21</code>
+              </a>
+            </li>
+            <li>
+              <a class="example" href="https://savory-pyrite.glitch.me/api/timestamp" target="_blank">
+                <code>GET .../api/timestamp</code>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer">
+        <p>
+          made by <a id="creater" class="footer-link" href="https://jonnycomes.github.io/Portfolio/" target="_blank">Jonny Comes</a> | <a class="footer-link" href="https://github.com/jonnycomes/FCC-Apis-and-Microservices-Projects.git" target="_blank">source code</a>
+        </p>
+      </div>
+   </body>
+
+</html>
