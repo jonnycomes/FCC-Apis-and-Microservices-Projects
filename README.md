@@ -1,4 +1,4 @@
-# FCC-Apis-and-Microservices-Projects
+# FCC Apis and Microservices Projects
 
 This repository holds the source code for my solutions to the FreeCodeCamp Apis and Microservices Projects. 
 
