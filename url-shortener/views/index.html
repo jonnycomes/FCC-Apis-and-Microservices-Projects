@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>URL Shortener Microservice</title>
+      <link rel="shortcut icon" href="https://cdn.glitch.com/693b5cdc-07b6-44a9-87a2-95de1bd22c46%2Flowercase-j-512-269621.png?1556046497915" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+
+      <div class="container">
+        <h1>URL Shortener Microservice</h1>
+        <div id="how-it-works">
+          <p>
+            <h2>
+              How this site works
+            </h2>
+            <ul>
+              <li>
+                You can POST a URL to 
+                <code>https://quiver-icon.glitch.me/api/shorturl/new</code> 
+                using the input field below, 
+                and you will receive a shortened URL in the JSON response.
+              </li>  
+              <li>
+                If you pass an invalid URL that doesn't follow the 
+                <code>http(s)://www.example.com(/more/routes)</code> format, 
+                the JSON response will contain an error like <code>{"error":"invalid URL"}</code>
+              </li>
+              <li>
+                When you visit the shortened URL, i.e. 
+                <code>https://quiver-icon.glitch.me/api/shorturl/[shortened_url]</code>, 
+                it will redirect you to the original link.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div id="url-shortener">
+          <h2>Create a shortened URL</h2>
+          <p>
+            Here's where you can POST a URL to be shortened:
+            <br>
+            <form action="/api/shorturl/new" method="post">
+              <input type="text" id="url-to-shorten" name="url" placeholder="Enter the url to be shortened here">
+              <input type="submit" value="POST URL">
+            </form>
+          </p>
+       </div>
+      </div>
+      <div class="footer">
+        <p>
+          by <a id="creater" class="footer-link" href="https://jonnycomes.github.io/Portfolio/" target="_blank">Jonny Comes</a> | <a class="footer-link" href="https://github.com/jonnycomes/FCC-Apis-and-Microservices-Projects.git" target="_blank">source code</a>
+        </p>
+      </div>
+   </body>
+
+</html>
